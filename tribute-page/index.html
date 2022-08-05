@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Mi primera página</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <script>
+        function myFunction() {
+            const navigationBar = document.getElementById("navigation-bar");
+            if (navigationBar.className === "navigation-bar") {
+                navigationBar.className += " responsive";
+            } else {
+                navigationBar.className = "navigation-bar";
+            }
+        }
+    </script>
+
+    <!-- padding: 20px; flex: 3; padding-right: 10%; text-align: justify;" -->
+
+    <img src="Banner.png" alt="Banner" height="140px" width="100%">
+
+    <header id="header">
+        <h1 style="margin-bottom: 0px;">♡ Mujeres en la computación ♡</h1> 
+        <p>Las historias de muchas mujeres importantes en el área de computación.</p>
+    </header>
+
+    <nav id="navigation-bar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a>Ada Lovelace</a></li>
+            <li>Grace Hopper</li>
+            <li>Margaret Hamilton</li>
+            <li>Frances E. Allen</li>
+            <li class="menu__hamburger-icon">
+                <a href="javascript:void(0);" onclick="myFunction()">
+                    <i class="lni lni-menu"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div id="main-content-container">
+        <aside id="links-sidebar">
+            <h3>Links relacionados:</h3>
+            <ul>
+                <li><a href="#">Sitio 1</a></li>
+                <li><a href="#">Sitio 2</a></li>
+                <li><a href="#">Sitio 3</a></li>
+                <li><a href="#">Sitio 4</a></li>
+                <li><a href="#">Sitio 5</a></li>
+            </ul>
+        </aside>
+
+        <section id = "main-content">
+            <img src="Collage.jpg" alt="Collage" class="image">
+            <h3>Mujeres en la informática</h3>
+            <p>Aunque en las últimas décadas las mujeres han conquistado espacios en el 
+                ámbito laboral antes reservados exclusivamente para los hombres, solo 
+                conforman una parte pequeña del sector de la informática: ocupan menos 
+                del 25% de los empleos de esa industria en todo el mundo. </p>
+            <p>En América Latina, hay estudios que demuestran que las carreras 
+                relacionadas con la informática son percibidas por muchas jóvenes como 
+                un ámbito "de chicos".</p>
+            <p>La cultura "brogrammer" (juego de palabras en inglés que funde brother 
+                -hermano- con grammer, la última parte de la palabra programmer: programador):
+                 así se conoce a la dominación masculina, poco acogedora e incluso agresiva 
+                 con que se percibe el ámbito de la computación.</p>
+            <p>En Silicon Valley, donde 25% de la fuerza de trabajo es masculina, las mujeres 
+                dicen que no se les motiva a perseguir empleos en la rama tecnológica por la 
+                imperante cultura de macho, "brogrammer", implantada desde los campus 
+                universitarios.</p>
+    
+        </section>
+    </div>
+
+    
+
+    <footer id="footer">
+        <div class="footer__section">
+            Mis redes
+
+            <div class="social__networks">
+                <div class="social__network">
+                    <span class="social__icon-container"><i class="lni lni-github"></i></span> 
+                    <span class="social__icon-handler"><a href="https://github.com/aleBarajas" target="_blank">@aleBarajas</a></span>
+                </div>
+
+                <div class="social__network">
+                    <span class="social__icon-container"><i class="lni lni-linkedin-original"></i></span>
+                    <span class="social__icon-handler"><a href="https://www.linkedin.com/" target="_blank">liknkedin</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__section">
+            Contacto
+
+            <form action="contacto">
+                <label for="mail">Correo electrónico: </label> <br>
+                <input type="text" name="mail" id="mail"> <br> <br>
+
+                <label for="mensaje">Mensaje: </label>
+                <textarea id="mensaje" cols="50" rows="10"></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="footer__more-sites footer__section">
+            Otros de mis sitios
+            <ul>
+                <li><a href="#">Sitio 1</a></li>
+                <li><a href="#">Sitio 2</a></li>
+                <li><a href="#">Sitio 3</a></li>
+                <li><a href="#">Sitio 4</a></li>
+                <li><a href="#">Sitio 5</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
